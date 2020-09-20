@@ -1,2 +1,5 @@
 atlantiku-gateway:
   url: http://localhost:8100
+  
+  server:
+    port: 8888
