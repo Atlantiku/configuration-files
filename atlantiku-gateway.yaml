@@ -1,5 +1,21 @@
-atlantiku-gateway:
-  url: http://localhost:8100
-  
-  server:
-    port: 8888
+server:
+  port: 7777
+
+zuul:
+  routes:
+    authentication:
+      url: http://localhost:8001
+    product:
+      url: http://localhost:8002
+    order:
+      url: http://localhost:8003
+    payment:
+      url: http://localhost:8004
+    notification:
+      url: http://localhost:8005
+    searchEngine:
+      url: http://localhost:8006
+    fileProcessing:
+      url: http://localhost:8008
+    chat:
+      url: http://localhost:8009
